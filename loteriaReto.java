@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class loteriaReto {
 	class GordoException extends Exception {
-		//COMPLETAR
+		//COMPLETAR Jose manual
 	}
 
 	public class LoteriaPlantilla {	
@@ -21,26 +21,21 @@ public class loteriaReto {
 			bomboPremios[0]="PRIMER PREMIO";  // gordo de navidad
 			bomboPremios[1]="SEGUNDO PREMIO";	// un segundo premio
 			bomboPremios[2]="TERCER PREMIO";
-			bomboPremios[3])="CUARTO PREMIO";
-			bomboPremios[5]="QUINTO PREMIO";
-			bomboPremios[6]="PEDREA";
-			
 			//COMPLETAR MPG
-			
 			// un tercer premio
 			// dos cuartos premios
 
 			// 8 quintos premios
-
 			// el resto hasta completar 1.807 premios son "pedrea"
-			
-			numPremios= 1807;
-			int []tercerPremio= new int[1];
-			int []dosCuartos= new int[2];
-			int []ochoQuintos= new int[8];
-			int []pedreas= new int[1795];
-			for(int i=0; 500<700 (tercerpremio.Length));
-
+			for(int i=3; i<5; i++) {
+				 bomboPremios[i]="CUARTO PREMIO";
+			}
+			for(int i=5; i<13; i++) {
+				 bomboPremios[i]="QUINTO PREMIO";
+			}
+			for(int i=13; i<bomboPremios.length; i++) {
+				 bomboPremios[i]="PEDREA";
+			}
 							
 			System.out.println("Bombo de premios creado...");
 			return bomboPremios;
@@ -54,13 +49,16 @@ public class loteriaReto {
 
 			// si el número ya había salido, generamos otro al azar
 
-			//COMPLETAR
+			//COMPLETAR MPG Y CHC
 			
 			// marcamos el número que ha salido con -1 para que no vuelva a salir
+			while(bombo[numAgraciado]==-1);
+			int numeroPremiado=bombo[numAgraciado];
 			bombo[numAgraciado]=-1;
 			
+			
 			//COMPLETAR MPG
-			numAgraciado= 
+			return numeroPremiado;
 			
 		}
 		
@@ -73,11 +71,16 @@ public class loteriaReto {
 			int indicePremiado = (int) (Math.random()*bombo.length);
 
 			// si el premio ya había salido, generamos otro al azar
-			//COMPLETAR
-			
+			//COMPLETAR MPG
+			while(bombo[indicePremiado]=="");
+		 	premio=bombo[indicePremiado];
+		 				
+		 		premio=bombo[indicePremiado];
+						bombo[indicePremiado]="";
+						
 			// marcamos el premio que ha salido 
-			//COMPLETAR
-	 				
+			//COMPLETAR MPG
+		
 			return premio;
 		}
 		
@@ -105,7 +108,7 @@ public class loteriaReto {
 			System.out.println("\nCOMPROBACION DE DECIMOS:");
 			
 			//Compruebo si me ha tocado la lotería
-			//COMPLETAR
+			//COMPLETAR JOSEMA
 			
 		}
 					
@@ -147,7 +150,7 @@ public class loteriaReto {
 					listaNumerosSorteo[j]=numeroFormateado;
 					
 					//Añado el premio a la lista oficial del sorteo en la posición j
-					//COMPLETAR
+					//COMPLETAR CHARO
 					
 					j++;
 					
@@ -157,7 +160,7 @@ public class loteriaReto {
 				compruebaDecimos(listaNumerosSorteo, listaPremiosSorteo);
 					
 				
-			} 	//COMPLETAR (capturar excepción propia)
+			} 	//COMPLETAR (capturar excepción propia) jOSEMA
 			
 			catch (Exception e) {
 					System.out.println("Error:"+e.getMessage());
